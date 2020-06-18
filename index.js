@@ -35,7 +35,7 @@ console.log(userName);
 // TODO: ADD CODE HERE
 let firstName = "Francis";
 let lastName = "Aleke";
-console.log(firstName + "" + lastName);
+console.log(firstName + " " + lastName);
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -47,9 +47,11 @@ console.log(firstName + "" + lastName);
  *
  * Example Output: "$49.90"
  */
-let price = "9.98";
-let quantity = "5";
-let total = "9.98";
+let price = 9.98;
+let quantity = 5;
+let total = price * quantity;
+
+console.log("$" + total.toString());
 
 // TODO: ADD CODE HERE
 
@@ -70,7 +72,7 @@ let total = "9.98";
 // TODO: ADD CODE HERE
 let weather = "Rainy";
 let message = "";
-if ((weather = "sunny")) {
+if (weather === "Sunny") {
   message = "Yay! It's sunny outside";
 } else {
   message = "Aww! It's not sunny outside";
@@ -91,7 +93,7 @@ console.log(message);
 function myFunction() {
   return "I called a function!";
 }
-console.log(myFunction);
+console.log(myFunction());
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -105,10 +107,9 @@ console.log(myFunction);
  */
 
 // TODO: ADD CODE HERE
-function myArrowFunction() {
-  return "I called an arrow function";
-}
-console.log(myArrowFunction);
+const myArrowFunction = () => "I called an arrow function";
+
+console.log(myArrowFunction());
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
  *
@@ -122,10 +123,11 @@ console.log(myArrowFunction);
  */
 
 // TODO: ADD CODE HERE
-function stringToUpper(str) {
-  return stringToUppercase;
-  console.log(stringToUpper(str));
-}
+function stringToUpper(myString) {}
+return myString.toUpperCase();
+let myString = "why am i screaming";
+console.log(stringToUpper(myString));
+
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
  *
@@ -148,4 +150,4 @@ function multiplyByTwo(number) {
 let num1 = multiplyByTwo(1);
 let num2 = multiplyByTwo(5);
 let num3 = multiplyByTwo(10);
-console.log("num1", "num2", "num3");
+console.log(num1, num2, num3);
