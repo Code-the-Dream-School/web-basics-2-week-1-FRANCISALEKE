@@ -19,7 +19,7 @@ console.log("hello world");
  * Example Output: n/a
  */
 // TODO: ADD CODE HERE
-var userName = "Chief123";
+let userName = "Chief123";
 console.log(userName);
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -33,9 +33,9 @@ console.log(userName);
  */
 
 // TODO: ADD CODE HERE
-var firstName = "Francis";
-var lastName = "Aleke";
-console.log(firstName, lastName);
+let firstName = "Francis";
+let lastName = "Aleke";
+console.log(firstName + "" + lastName);
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -47,9 +47,9 @@ console.log(firstName, lastName);
  *
  * Example Output: "$49.90"
  */
-var price = "9.98";
-var quantity = "5";
-var total = "9.98";
+let price = "9.98";
+let quantity = "5";
+let total = "9.98";
 
 // TODO: ADD CODE HERE
 
@@ -68,8 +68,8 @@ var total = "9.98";
  */
 
 // TODO: ADD CODE HERE
-var weather = "Rainy";
-var message = "";
+let weather = "Rainy";
+let message = "";
 if ((weather = "sunny")) {
   message = "Yay! It's sunny outside";
 } else {
@@ -106,7 +106,7 @@ console.log(myFunction);
 
 // TODO: ADD CODE HERE
 function myArrowFunction() {
-    return "I called an arrow function";
+  return "I called an arrow function";
 }
 console.log(myArrowFunction);
 /* Challenge #7
@@ -122,8 +122,9 @@ console.log(myArrowFunction);
  */
 
 // TODO: ADD CODE HERE
-function stringToUpper('str'){
-    return
+function stringToUpper(str) {
+  return stringToUppercase;
+  console.log(stringToUpper(str));
 }
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -141,9 +142,10 @@ function stringToUpper('str'){
  */
 
 // TODO: ADD CODE HERE
-function multiplyByTwo() {
-    return number x two;
+function multiplyByTwo(number) {
+  return number * 2;
 }
-var = "num1";
-var = "num2";
-var = "num3";
+let num1 = multiplyByTwo(1);
+let num2 = multiplyByTwo(5);
+let num3 = multiplyByTwo(10);
+console.log("num1", "num2", "num3");
